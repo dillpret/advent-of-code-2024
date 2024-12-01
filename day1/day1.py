@@ -15,3 +15,12 @@ for index in range(0, len(list1)):
     total += abs(list1[index] - list2[index])
 
 print(total)
+
+similarity_score = 0
+for index in range(0, len(list1)):
+    value = list1[index]
+    similarity_score += value * list2.count(value)
+
+print(similarity_score)
+
+
